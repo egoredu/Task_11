@@ -41,10 +41,13 @@ int main() {
         row.clear();
         for (int j = 0; j < n; ++j) {
             cin >> el;
+            cout << el << ' ';
             row.push_back(el);
         }
+        cout << '\n';
         matrix.push_back(row);
     }
+    cout << "\n\n";
     struct diag diagonals[n + m - 1]; // каждый элемент – diag, в котором длина диагонали, сумма, максимум, номер
     struct diag d{};
     int maximum, sum;
