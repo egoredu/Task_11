@@ -32,7 +32,7 @@ int main() {
     vector<int> row;
     char *filename;
 
-    cout << "Введите путь к входному файлу:\n";
+    cout << "Enter the input file path:\n";
     cin >> filename;
     freopen(filename, "r", stdin);
     cin >> m >> n;
@@ -74,6 +74,6 @@ int main() {
     // выводим
     for (int l = 0; l < n + m - 1; ++l) {
         d = diagonals[l];
-        cout << d.number << ") длина: " << d.length << ", сумма: " << d.sum << ", максимум: " << d.maximum <<'\n';
+        cout << d.number << ") length: " << d.length << ", sum: " << d.sum << ", max: " << d.maximum <<'\n';
     }
 }
